@@ -132,7 +132,7 @@ int main()
 	int pipes[2];
 	char app_name[20];
 	char paras[20];
-	
+
 	socketpair(AF_UNIX, SOCK_STREAM, 0, pipes);
 	
 	if (create_ttu_thread(pipes)) {
